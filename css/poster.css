@@ -7,7 +7,7 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     color: #151515;
 }
 
@@ -115,6 +115,51 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.modal {
+    display: none;
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background-color:  rgba(83, 83, 83, 0.644);
+   z-index: 2;
+   top: 0;
+   left: 0; 
+   text-align: center;
+}
+
+.modal_content {
+    background-color:  rgba(3, 37, 65, 0.986);
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom_in 1s;
+    border-radius: 5%;
+}
+
+@keyframes zoom_in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.close_btn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.movie_poster_modal {
+    width: 300px;
+    border-radius: 5%;
+}
+
+.modal_heading {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 1rem;
 }
 
 footer {
